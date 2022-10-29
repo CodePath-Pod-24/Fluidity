@@ -1,0 +1,6 @@
+framework module Pods_Fluidity_FluidityUITests {
+  umbrella header "Pods-Fluidity-FluidityUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
