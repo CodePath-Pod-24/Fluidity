@@ -190,6 +190,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-Op-aYa">
+                                <rect key="frame" x="57" y="200" width="277" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="6c8-gX-frj">
+                                <rect key="frame" x="60" y="282" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slider:" destination="k5K-ah-tKX" eventType="valueChanged" id="WKQ-EQ-2OM"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPL-5k-TeJ">
+                                <rect key="frame" x="79" y="344" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88386556490000001" green="0.92709196999999999" blue="0.96689504380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START"/>
+                                <connections>
+                                    <action selector="startTimer:" destination="k5K-ah-tKX" eventType="touchUpInside" id="utD-p1-cFR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTb-C6-9d9">
+                                <rect key="frame" x="237" y="343" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88386556490000001" green="0.92709196999999999" blue="0.96689504380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="STOP"/>
+                                <connections>
+                                    <action selector="stopTimer:" destination="k5K-ah-tKX" eventType="touchUpInside" id="nnn-i0-mNU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9aQ-m6-0ao"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -197,6 +231,12 @@
                     <navigationItem key="navigationItem" id="Q25-KN-HF1">
                         <barButtonItem key="rightBarButtonItem" image="gearshape.fill" catalog="system" id="ndW-fI-3mt"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="minuteLabel" destination="EFa-Op-aYa" id="eH8-5T-2de"/>
+                        <outlet property="startButton" destination="gPL-5k-TeJ" id="yev-NV-yBw"/>
+                        <outlet property="stopButton" destination="UTb-C6-9d9" id="p8M-ws-CNh"/>
+                        <outlet property="timerSlider" destination="6c8-gX-frj" id="whk-Be-qA4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Euk-6S-8su" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
