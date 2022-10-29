@@ -41,16 +41,16 @@ How clearly defined is the product you want to build?
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* User can create an account
-* User can login 
-* User can use the timer
-* User can change the duration of the timer
-* User can change the settings
+* [x] User can create an account
+* [x] User can login 
+* [x] User can use the timer
+* [x] User can change the duration of the timer
+* [ ] User can change the settings
 
 **Optional Nice-to-have Stories**
-* User can add a playlist to listen to music 
-* User can receive points for successfully completing a study session
-* Use can view a feed of studying tips and recommandations
+* [ ] User can add a playlist to listen to music 
+* [ ] User can receive points for successfully completing a study session
+* [ ] Use can view a feed of studying tips and recommandations
 
 
 ### 2. Screen Archetypes
@@ -116,3 +116,9 @@ How clearly defined is the product you want to build?
 - Studying Tips Screen
     - (Read/GET) Fetch studying tips from external websites
     ![](https://i.imgur.com/eZvMq8b.png)
+
+### 5. GIFs
+- User stories: create an account and login
+<img src='http://g.recordit.co/8OnSGF1PC4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- User stories: use the timer and change duration
+<img src='http://g.recordit.co/iOuagv17Ev.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
