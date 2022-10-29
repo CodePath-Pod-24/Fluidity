@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E457129290CC5A900279B36 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E457128290CC5A900279B36 /* alarm.mp3 */; };
+		0EB73FCF290DB8D000D42091 /* StudyTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */; };
+		0EB73FD1290DBA1000D42091 /* StudyTipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */; };
+		0EB73FD3290DBEF200D42091 /* TipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FD2290DBEF200D42091 /* TipDetailsViewController.swift */; };
 		1C232AFC682B51718DF7194E /* Pods_FluidityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1794111BBA180EAB9299D0 /* Pods_FluidityTests.framework */; };
 		2C09E66AF2CB655F68EEFAA9 /* Pods_Fluidity_FluidityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F70796B67E088B5909C696 /* Pods_Fluidity_FluidityUITests.framework */; };
 		9DF1E7B0DA0C1D2461A79E1F /* Pods_Fluidity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F825103D89BA5A665F089235 /* Pods_Fluidity.framework */; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		0E457128290CC5A900279B36 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = ../../../Downloads/alarm.mp3; sourceTree = "<group>"; };
+		0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipsViewController.swift; sourceTree = "<group>"; };
+		0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipCell.swift; sourceTree = "<group>"; };
+		0EB73FD2290DBEF200D42091 /* TipDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipDetailsViewController.swift; sourceTree = "<group>"; };
 		109D72D5922DB798777530D4 /* Pods-Fluidity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fluidity.debug.xcconfig"; path = "Target Support Files/Pods-Fluidity/Pods-Fluidity.debug.xcconfig"; sourceTree = "<group>"; };
 		167AC2FCCAFC6912983592E4 /* Pods-FluidityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluidityTests.release.xcconfig"; path = "Target Support Files/Pods-FluidityTests/Pods-FluidityTests.release.xcconfig"; sourceTree = "<group>"; };
 		303670456047E12525A0ED3E /* Pods-Fluidity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fluidity.release.xcconfig"; path = "Target Support Files/Pods-Fluidity/Pods-Fluidity.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 				A67DFE82290CA6D80038A7BB /* LoginViewController.swift */,
 				A67DFE84290CA6F40038A7BB /* HomeViewController.swift */,
 				A67DFE86290CAE460038A7BB /* RegisterViewController.swift */,
+				0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */,
+				0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */,
+				0EB73FD2290DBEF200D42091 /* TipDetailsViewController.swift */,
 			);
 			path = Fluidity;
 			sourceTree = "<group>";
@@ -416,9 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB73FCF290DB8D000D42091 /* StudyTipsViewController.swift in Sources */,
 				A67DFE83290CA6D80038A7BB /* LoginViewController.swift in Sources */,
 				A67DFE87290CAE460038A7BB /* RegisterViewController.swift in Sources */,
+				0EB73FD3290DBEF200D42091 /* TipDetailsViewController.swift in Sources */,
 				A67DFE53290CA0320038A7BB /* AppDelegate.swift in Sources */,
+				0EB73FD1290DBA1000D42091 /* StudyTipCell.swift in Sources */,
 				A67DFE55290CA0320038A7BB /* SceneDelegate.swift in Sources */,
 				A67DFE85290CA6F40038A7BB /* HomeViewController.swift in Sources */,
 			);
