@@ -2,59 +2,66 @@
 //  StudyTipsViewController.swift
 //  Fluidity
 //
-//  Created by Sherry Liu on 10/29/22.
+//  Created by Saul Lopez Lucas on 11/11/22.
 //
 
 import UIKit
 import AlamofireImage
 
-class StudyTipsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    // List of study tip names
-    // var tips =[[String:Any]]()
-    
-    // Study tips collection
-    @IBOutlet weak var collectionView: UICollectionView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        collectionView.delegate = self
-        collectionView.dataSource = self
-
-        // Connect to study tips API
-        
+class StudyTipsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    var videos = [[String: Any]]()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videos.count
     }
     
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // return tips.count
-        return 1;
-    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StudyTipsCell") as! StudyTipsCell
+        
+        let video = videos[indexPath.row]
+        let snippet = video["snippet"] as! [String: Any]
+        let thumbnails = snippet["thumbnails"] as! [String: Any]
+        let thumbnail = thumbnails["standard"] as! [String: Any]
+        let thumbnail_path = thumbnail["url"] as! String
+        let creator = snippet["channelTitle"] as! String
+        let title = snippet["title"] as! String
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StudyTipCell", for: indexPath) as! StudyTipCell
-        
-        // Configure image url to set cell image
-        
+        cell.titleLabel.text = title
+        cell.creatorLabel.text = creator
+        let imageURL = URL(string: thumbnail_path)
+        cell.thumbnailView.af.setImage(withURL: imageURL!)
         return cell
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for:cell)!
+        let video = videos[indexPath.row]
+        let detailsViewController = segue.destination as! StudyTipsVideoViewController
+        detailsViewController.video = video
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        
     }
-    */
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("loading tip details screen")
+    @IBOutlet weak var tableView: UITableView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+        let url = URL(string: "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL2ADAFpTg5aZfX1gq1ZX27sYmOGwtBifC&key=AIzaSyDvjIzLkJmPJkn1aFXXDEDsFuna4F9r68Q")!
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+             
+             if let error = error {
+                    print(error.localizedDescription)
+             } else if let data = data {
+                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                 self.videos = dataDictionary["items"] as! [[String:Any]]
+                 self.tableView.reloadData()
+             }
+        }
+        task.resume()
         
-        // Find selected study tip
-        
-        // Pass the selected tip to the tip details view controller
     }
-
+    
 }

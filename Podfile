@@ -6,6 +6,7 @@ target 'Fluidity' do
   use_frameworks!
 	pod 'Parse'
 	pod 'AlamofireImage'
+	pod 'youtube-ios-player-helper'
 
   # Pods for Fluidity
 

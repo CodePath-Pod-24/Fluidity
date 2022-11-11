@@ -69,7 +69,7 @@ class HomeViewController: UIViewController {
 
         // Set up timer alarm
         do {
-            let audioPath = Bundle.main.path(forResource: "alarm", ofType: ".mp3")
+            let audioPath = Bundle.main.path(forResource: "Fluidity_alarm", ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
         }
         catch {

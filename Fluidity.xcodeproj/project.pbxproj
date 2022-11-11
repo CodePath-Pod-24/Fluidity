@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E457129290CC5A900279B36 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E457128290CC5A900279B36 /* alarm.mp3 */; };
 		0E6B3344291E06940025174E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B3343291E06940025174E /* AccountViewController.swift */; };
 		0E6B3348291E13260025174E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B3347291E13260025174E /* ViewController.swift */; };
 		0E9CC85329175E4D00726BAD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9CC85229175E4D00726BAD /* SettingsViewController.swift */; };
-		0EB73FCF290DB8D000D42091 /* StudyTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */; };
-		0EB73FD1290DBA1000D42091 /* StudyTipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */; };
 		0EB73FD3290DBEF200D42091 /* TipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FD2290DBEF200D42091 /* TipDetailsViewController.swift */; };
 		1C232AFC682B51718DF7194E /* Pods_FluidityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1794111BBA180EAB9299D0 /* Pods_FluidityTests.framework */; };
 		2C09E66AF2CB655F68EEFAA9 /* Pods_Fluidity_FluidityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F70796B67E088B5909C696 /* Pods_Fluidity_FluidityUITests.framework */; };
 		9DF1E7B0DA0C1D2461A79E1F /* Pods_Fluidity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F825103D89BA5A665F089235 /* Pods_Fluidity.framework */; };
+		A612395B291E31F6001D97B1 /* Fluidity_alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A612395A291E31F6001D97B1 /* Fluidity_alarm.mp3 */; };
+		A612395F291EA68F001D97B1 /* StudyTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612395E291EA68F001D97B1 /* StudyTipsViewController.swift */; };
+		A6123961291EA909001D97B1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6123960291EA909001D97B1 /* ProfileViewController.swift */; };
+		A6123963291EAC28001D97B1 /* StudyTipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6123962291EAC28001D97B1 /* StudyTipsCell.swift */; };
+		A6123965291EBBA0001D97B1 /* StudyTipsVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6123964291EBBA0001D97B1 /* StudyTipsVideoViewController.swift */; };
 		A67DFE53290CA0320038A7BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DFE52290CA0320038A7BB /* AppDelegate.swift */; };
 		A67DFE55290CA0320038A7BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DFE54290CA0320038A7BB /* SceneDelegate.swift */; };
 		A67DFE5A290CA0320038A7BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67DFE58290CA0320038A7BB /* Main.storyboard */; };
@@ -48,12 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E457128290CC5A900279B36 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = ../../../Downloads/alarm.mp3; sourceTree = "<group>"; };
 		0E6B3343291E06940025174E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		0E6B3347291E13260025174E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E9CC85229175E4D00726BAD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipsViewController.swift; sourceTree = "<group>"; };
-		0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipCell.swift; sourceTree = "<group>"; };
 		0EB73FD2290DBEF200D42091 /* TipDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipDetailsViewController.swift; sourceTree = "<group>"; };
 		109D72D5922DB798777530D4 /* Pods-Fluidity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fluidity.debug.xcconfig"; path = "Target Support Files/Pods-Fluidity/Pods-Fluidity.debug.xcconfig"; sourceTree = "<group>"; };
 		167AC2FCCAFC6912983592E4 /* Pods-FluidityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluidityTests.release.xcconfig"; path = "Target Support Files/Pods-FluidityTests/Pods-FluidityTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +60,11 @@
 		470754902F618C3C030CB72E /* Pods-Fluidity-FluidityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fluidity-FluidityUITests.release.xcconfig"; path = "Target Support Files/Pods-Fluidity-FluidityUITests/Pods-Fluidity-FluidityUITests.release.xcconfig"; sourceTree = "<group>"; };
 		842D6BCF7FD1F8F0B4EA1436 /* Pods-FluidityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluidityTests.debug.xcconfig"; path = "Target Support Files/Pods-FluidityTests/Pods-FluidityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		94F70796B67E088B5909C696 /* Pods_Fluidity_FluidityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fluidity_FluidityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A612395A291E31F6001D97B1 /* Fluidity_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Fluidity_alarm.mp3; path = ../../../Downloads/Fluidity_alarm.mp3; sourceTree = "<group>"; };
+		A612395E291EA68F001D97B1 /* StudyTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipsViewController.swift; sourceTree = "<group>"; };
+		A6123960291EA909001D97B1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A6123962291EAC28001D97B1 /* StudyTipsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipsCell.swift; sourceTree = "<group>"; };
+		A6123964291EBBA0001D97B1 /* StudyTipsVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipsVideoViewController.swift; sourceTree = "<group>"; };
 		A67DFE4F290CA0320038A7BB /* Fluidity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluidity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67DFE52290CA0320038A7BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A67DFE54290CA0320038A7BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,16 +157,18 @@
 				A67DFE5B290CA0340038A7BB /* Assets.xcassets */,
 				A67DFE5D290CA0340038A7BB /* LaunchScreen.storyboard */,
 				A67DFE60290CA0340038A7BB /* Info.plist */,
-				0E457128290CC5A900279B36 /* alarm.mp3 */,
+				A612395A291E31F6001D97B1 /* Fluidity_alarm.mp3 */,
 				A67DFE82290CA6D80038A7BB /* LoginViewController.swift */,
 				A67DFE84290CA6F40038A7BB /* HomeViewController.swift */,
 				A67DFE86290CAE460038A7BB /* RegisterViewController.swift */,
-				0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */,
-				0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */,
 				0EB73FD2290DBEF200D42091 /* TipDetailsViewController.swift */,
 				0E9CC85229175E4D00726BAD /* SettingsViewController.swift */,
 				0E6B3343291E06940025174E /* AccountViewController.swift */,
 				0E6B3347291E13260025174E /* ViewController.swift */,
+				A612395E291EA68F001D97B1 /* StudyTipsViewController.swift */,
+				A6123960291EA909001D97B1 /* ProfileViewController.swift */,
+				A6123962291EAC28001D97B1 /* StudyTipsCell.swift */,
+				A6123964291EBBA0001D97B1 /* StudyTipsVideoViewController.swift */,
 			);
 			path = Fluidity;
 			sourceTree = "<group>";
@@ -303,7 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E457129290CC5A900279B36 /* alarm.mp3 in Resources */,
+				A612395B291E31F6001D97B1 /* Fluidity_alarm.mp3 in Resources */,
 				A67DFE5F290CA0340038A7BB /* LaunchScreen.storyboard in Resources */,
 				A67DFE5C290CA0340038A7BB /* Assets.xcassets in Resources */,
 				A67DFE5A290CA0320038A7BB /* Main.storyboard in Resources */,
@@ -434,15 +440,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EB73FCF290DB8D000D42091 /* StudyTipsViewController.swift in Sources */,
 				A67DFE83290CA6D80038A7BB /* LoginViewController.swift in Sources */,
 				A67DFE87290CAE460038A7BB /* RegisterViewController.swift in Sources */,
+				A612395F291EA68F001D97B1 /* StudyTipsViewController.swift in Sources */,
+				A6123963291EAC28001D97B1 /* StudyTipsCell.swift in Sources */,
 				0EB73FD3290DBEF200D42091 /* TipDetailsViewController.swift in Sources */,
 				0E6B3348291E13260025174E /* ViewController.swift in Sources */,
 				A67DFE53290CA0320038A7BB /* AppDelegate.swift in Sources */,
-				0EB73FD1290DBA1000D42091 /* StudyTipCell.swift in Sources */,
+				A6123961291EA909001D97B1 /* ProfileViewController.swift in Sources */,
 				0E6B3344291E06940025174E /* AccountViewController.swift in Sources */,
 				A67DFE55290CA0320038A7BB /* SceneDelegate.swift in Sources */,
+				A6123965291EBBA0001D97B1 /* StudyTipsVideoViewController.swift in Sources */,
 				A67DFE85290CA6F40038A7BB /* HomeViewController.swift in Sources */,
 				0E9CC85329175E4D00726BAD /* SettingsViewController.swift in Sources */,
 			);
