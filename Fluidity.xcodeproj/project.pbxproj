@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E457129290CC5A900279B36 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E457128290CC5A900279B36 /* alarm.mp3 */; };
 		0E6B3344291E06940025174E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B3343291E06940025174E /* AccountViewController.swift */; };
+		0E6B3348291E13260025174E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B3347291E13260025174E /* ViewController.swift */; };
 		0E9CC85329175E4D00726BAD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9CC85229175E4D00726BAD /* SettingsViewController.swift */; };
 		0EB73FCF290DB8D000D42091 /* StudyTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */; };
 		0EB73FD1290DBA1000D42091 /* StudyTipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0E457128290CC5A900279B36 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = ../../../Downloads/alarm.mp3; sourceTree = "<group>"; };
 		0E6B3343291E06940025174E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		0E6B3347291E13260025174E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E9CC85229175E4D00726BAD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0EB73FCE290DB8D000D42091 /* StudyTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipsViewController.swift; sourceTree = "<group>"; };
 		0EB73FD0290DBA1000D42091 /* StudyTipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTipCell.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				0EB73FD2290DBEF200D42091 /* TipDetailsViewController.swift */,
 				0E9CC85229175E4D00726BAD /* SettingsViewController.swift */,
 				0E6B3343291E06940025174E /* AccountViewController.swift */,
+				0E6B3347291E13260025174E /* ViewController.swift */,
 			);
 			path = Fluidity;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				A67DFE83290CA6D80038A7BB /* LoginViewController.swift in Sources */,
 				A67DFE87290CAE460038A7BB /* RegisterViewController.swift in Sources */,
 				0EB73FD3290DBEF200D42091 /* TipDetailsViewController.swift in Sources */,
+				0E6B3348291E13260025174E /* ViewController.swift in Sources */,
 				A67DFE53290CA0320038A7BB /* AppDelegate.swift in Sources */,
 				0EB73FD1290DBA1000D42091 /* StudyTipCell.swift in Sources */,
 				0E6B3344291E06940025174E /* AccountViewController.swift in Sources */,

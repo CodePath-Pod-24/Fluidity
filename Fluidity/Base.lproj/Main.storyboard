@@ -73,6 +73,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Shb-Vj-6KG"/>
                     <connections>
                         <outlet property="passwordField" destination="Kao-fr-yqW" id="XKz-TI-wC4"/>
                         <outlet property="usernameField" destination="5z5-er-Onc" id="3pC-N6-sXZ"/>
