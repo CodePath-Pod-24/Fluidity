@@ -124,3 +124,5 @@ How clearly defined is the product you want to build?
 <img src='http://g.recordit.co/iOuagv17Ev.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 - User stories: completed the study tips view controller and the settings view controller
 <img src='http://g.recordit.co/XHozjvdAyP.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+### 6. Demo Video
+- Link: https://www.youtube.com/watch?v=m2hN168bGeM
