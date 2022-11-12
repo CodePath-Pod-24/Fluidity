@@ -45,10 +45,10 @@ How clearly defined is the product you want to build?
 * [x] User can login 
 * [x] User can use the timer
 * [x] User can change the duration of the timer
-* [ ] User can change the settings
 
 **Optional Nice-to-have Stories**
 * [ ] User can add a playlist to listen to music 
+* [ ] User has a profile page 
 * [ ] User can receive points for successfully completing a study session
 * [ ] Use can view a feed of studying tips and recommandations
 
