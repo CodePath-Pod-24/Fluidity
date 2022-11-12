@@ -122,3 +122,5 @@ How clearly defined is the product you want to build?
 <img src='http://g.recordit.co/8OnSGF1PC4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 - User stories: use the timer and change duration
 <img src='http://g.recordit.co/iOuagv17Ev.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- User stories: completed the study tips view controller and the settings view controller
+<img src='http://g.recordit.co/XHozjvdAyP.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
